@@ -26,10 +26,10 @@
 --An element selector is the least selective, followed by the the class selector which is less inclusive as it only selects a certain class of elements, and the most selective selector is an id selector which is singular.
 5. What does `box-sizing` do?
 
---Box sizing refers to
+--Box sizing refers to the size of the contents + it's border + padding + margin, etc. When all is said and done, normally all of the extra space is not accounted for within the layout. However if you use box-sizing: border-box, or box-sizing: border-radius, etc. then you can easily account for how much space is actually being taken up by an element on your page.
 6. What's the difference between `relative` and `absolute` positioning?
 
---The difference between relative and absolute position is
+--The difference between relative and absolute position is that relative position is still within the flow of the layout. While desiging you can still make changes to the element's location "relative" to itself, such as top: 10px; which would move the element down 10px. However, with absolute positioning the element is removed from normal flow, and can really be placed anywhere on the page.
 
 ### Exercises
 
@@ -162,10 +162,20 @@ filterLongWords(["hello", "hi", "how"], "one");
 ### Questions
 
 1. How is a framework different than a library?
+
+--A framework provides structure as well as functionality to a website or application.
 2. What is a controller?
+
+--A controller is what essentially runs the website or application, without the controller, the program would not make sense.
 3. What is a view?
+
+--The view is the platform through which the audience is seeing the program. 
 4. What is a single page application?
+
+--A single page application is a web application that presented solely on a singular HTML page.
 5. What is a directive in Angular?
+
+--A directive is basically an attribute or a marker that kind of gives direction to look out for this element or do this to this element, sometimes in the case of ng-model it even creates a variable.
 
 ## Git
 
