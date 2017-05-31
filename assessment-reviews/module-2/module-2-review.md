@@ -39,7 +39,7 @@
   <a href="#" class="btn">Learn more</a>
   ```
   
-  -- .btn on:hover {
+  -- .btn:hover {
           background-color: blue;
      }
 
@@ -51,8 +51,10 @@
   </div>
   ```
   
-  --.container(@media min-width: 1200px) {
-                  max-width: 980px;
+  --@media (min-width: 1200px) {
+      .container {
+        max-width: 980px;
+      }
     }
 
 3. Which text would be red in the following example?
@@ -96,7 +98,7 @@
 function filterLongWords (arr, num){
   var arr2 = []
   for (var i = 0; i < arr.length ; i++) {
-    if (num.length <= arr[i].length) {
+    if (num.length < arr[i].length) {
       arr[i] = arr2.push(arr[i]);
     }
   }
@@ -155,7 +157,9 @@ filterLongWords(["hello", "hi", "how"], "one");
 
 2. Write another line that adds a click event to the buttons that logs `'click'` to the console when the button is clicked. Use the jQuery syntax.
 
---$(buttons).click();
+--buttons.click(function() {
+    console.log('click');
+  });
 
 ## Angular
 
